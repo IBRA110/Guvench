@@ -2136,15 +2136,16 @@ a:hover, a:focus, a.active {
 body{
 	background-color: rgba(0,0,0);
 }
-
-section{
-	margin: 0;
+.ssio{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .row{
 	display: flex;
 	justify-content: center;
-	align-items: flex-start;
-	padding-bottom: 100px;
+	align-items: center;
 }
 .row .img-responsive{
 	height: 500px;
@@ -2156,7 +2157,7 @@ section{
 	display: flex;
 	width: 100%;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 	gap: 20px;
 	padding: 0 100px;
 }
@@ -2181,7 +2182,9 @@ section{
 	height: 100%;
   object-fit: fill;	
 }	
-
+.hero-area{
+	margin: 0;
+}
 @media (max-width: 768px){
 	.row{
 		height: 100vh;
