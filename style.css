@@ -2132,3 +2132,73 @@ a:hover, a:focus, a.active {
   position: absolute;
   transform: translate(-50%, -50%);
 }
+
+body{
+	background-color: rgba(0,0,0);
+}
+
+section{
+	margin: 0;
+}
+.row{
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	padding-bottom: 100px;
+}
+.row .img-responsive{
+	height: 500px;
+	width: 500px;
+	overflow: visible;
+	z-index: 1;
+}
+.hakkinda{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	padding: 0 100px;
+}
+.hakkinda-info{
+	width: 50%;
+}
+.hakkinda h2{
+	color: rgb(255,255,2550);
+	text-align: left;
+	font-size: 48px;
+}
+.hakkinda p{
+	color: rgb(255,255,255);
+	text-align: left;
+}
+.hakkinda-info div{
+	border: 3px solid rgb(255,255,255);
+	overflow: hidden;
+}	
+.hakkinda-info img{
+  width: 100%;
+	height: 100%;
+  object-fit: fill;	
+}	
+
+@media (max-width: 768px){
+	.row{
+		height: 100vh;
+		align-items: center;
+	}
+	.row .img-responsive{
+		height: 300px;
+		width: 300px;
+		overflow: visible;
+		z-index: 1;
+	}
+	.hakkinda{
+		display: block;
+		width: 100%;
+		padding: 0 10px;
+	}
+
+	.hakkinda-info{
+		width: 100%;
+	}
