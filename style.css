@@ -2167,18 +2167,18 @@ body{
 .hakkinda-info{
 	width: 50%;
 }
-.hakkinda h2{
+.hakkinda-section h2{
 	color:#ffe047;
 	text-align: left;
 	font-size: 48px;
 }
-.hakkinda p{
+.hakkinda-section p{
 	color: rgb(255,255,255);
 	text-align: left;
 	font-size: 16px;
 }
 .hakkinda-info div{
-	border: 3px solid rgb(255,255,255);
+	border: 3px solid #ffe047;
 	overflow: hidden;
 }	
 .hakkinda-info img{
@@ -2233,6 +2233,58 @@ footer{
 .my-footer a{
 	color: #ffe047;
 }
+.popup-image-containter{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+	justify-content: center;
+	padding: 10px;
+}
+.popup-image{
+	height: 250px;
+	width: 350px;
+	border: 5px solid #ffe047;
+	box-shadow: 0 5px 15px  rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	cursor: pointer;
+}
+.popup-image img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	transition: 200ms linear;
+}
+.popup-image img:hover{
+	transform: scale(1.2)	
+}
+.popup-img{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.9);
+	height: 100%;
+	width: 100%;
+	z-index: 100;
+	display: none;
+}
+.popup-img span{
+	position: absolute;
+	top: 0;
+	right: 10px;
+	font-size: 60px;
+	font-weight: border;
+	color: #ffe047;
+	cursor: pointer;
+}
+.popup-img img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: solid 5px #ffe047;
+	width: 750px;
+	object-fit: cover;
+}
 @media (max-width: 768px){
 	.row{
 		height: 100vh;
@@ -2262,5 +2314,8 @@ footer{
 		flex-direction: column;
 		height: auto;
 		padding: 30px 0; 
+	}
+	.popup-img img{
+		width: 95%;
 	}
 }
