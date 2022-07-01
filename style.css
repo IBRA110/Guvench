@@ -2152,6 +2152,10 @@ body{
 	width: 500px;
 	overflow: visible;
 	z-index: 1;
+	pointer-events: none;
+}
+.hakkinda-section{
+	padding: 0 100px 100px;
 }
 .hakkinda{
 	display: flex;
@@ -2159,19 +2163,19 @@ body{
 	justify-content: center;
 	align-items: flex-start;
 	gap: 20px;
-	padding: 0 100px;
 }
 .hakkinda-info{
 	width: 50%;
 }
 .hakkinda h2{
-	color: rgb(255,255,2550);
+	color:#ffe047;
 	text-align: left;
 	font-size: 48px;
 }
 .hakkinda p{
 	color: rgb(255,255,255);
 	text-align: left;
+	font-size: 16px;
 }
 .hakkinda-info div{
 	border: 3px solid rgb(255,255,255);
@@ -2185,6 +2189,50 @@ body{
 .hero-area{
 	margin: 0;
 }
+footer{
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	padding: 30px;
+	background-color: rgb(20, 15, 7);
+}
+.col-footer p{
+	color: #ffe047;
+	font-size: 24px;
+}
+.nav-footer{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 0;
+}
+
+.nav-footer p{
+	color: white;
+	font-size: 16px;
+}
+.nav-footer i{
+	color: #ffe047;
+	font-size: 18px;
+}
+.nav-footer li{
+	list-style-type: none;
+}
+.nav-footer li a{
+	color: #ffe047;
+}
+.my-footer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+	height: 75px;
+	margin: 0;
+}
+.my-footer a{
+	color: #ffe047;
+}
 @media (max-width: 768px){
 	.row{
 		height: 100vh;
@@ -2196,12 +2244,23 @@ body{
 		overflow: visible;
 		z-index: 1;
 	}
+	.hakkinda-section{
+		padding: 0 10px 30px;
+	}
 	.hakkinda{
 		display: block;
 		width: 100%;
-		padding: 0 10px;
 	}
 
 	.hakkinda-info{
 		width: 100%;
 	}
+	footer{
+		flex-direction: column;
+	}
+	.my-footer{
+		flex-direction: column;
+		height: auto;
+		padding: 30px 0; 
+	}
+}
