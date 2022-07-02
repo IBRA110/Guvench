@@ -78,8 +78,10 @@
 			<section class="hero-area text-center overlay ssio" style="background-image: url(images/slide-1.jpg);" data-scroll-index="0">
 				<div id="particles-js"></div>
 					<div class="row">
-						<img src="images/LOGO.png" id='img' class="img-responsive">
-						<img src="images/LOGO-TEXT.png" class="img-responsive-text">
+						<img data-aos="fade-in"
+     data-aos-duration="3000"src="images/LOGO.png" id='img' class="img-responsive">
+						<img data-aos="fade-up"
+     data-aos-duration="3000"src="images/LOGO-TEXT.png" class="img-responsive-text">
 					</div>
 			</section>
 			<section data-scroll-index="1" class='hakkinda-section'>
@@ -152,20 +154,6 @@
 	<script src="https://kit.fontawesome.com/862e8ed3d3.js" crossorigin="anonymous"></script>
 	<script>
 		AOS.init();
-		let image = document.getElementById('img');
-		let images = ['images/01.png','images/03.png','images/02.png', 'images/04.png',
-]
-		let x = 0
-		window.onload = function (){
-			setInterval(function(){
-				image.src = images[x];
-				x ++
-				if (x >= images.length){
-					image.src = 'images/LOGO.png'
-					return clearInterval(this);
-				};
-			}, 500);
-		}
 	</script>
 </body>
 </html>
