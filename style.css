@@ -2144,15 +2144,20 @@ body{
 }
 .row{
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 .row .img-responsive{
-	height: 500px;
-	width: 500px;
+	height: 350px;
+	width: 400px;
 	overflow: visible;
 	z-index: 1;
 	pointer-events: none;
+}
+.row .img-responsive-text{
+	height: 130px;
+	width: 400px;
 }
 .hakkinda-section{
 	padding: 0 100px 100px;
@@ -2318,4 +2323,8 @@ footer{
 	.popup-img img{
 		width: 95%;
 	}
+	iframe{
+		width: 360px;
+		height: 260px;
+	} 
 }

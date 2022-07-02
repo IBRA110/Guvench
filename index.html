@@ -58,11 +58,11 @@
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav navbar-right">
 								<li><a href="#" data-scroll-nav="0">Ana Sayfa</a></li>
-								<li><a href="#" data-scroll-nav="1">asdHakkinda</a></li>
-								<li><a href="#" data-scroll-nav="2">about</a></li>
-								<li><a href="#" data-scroll-nav="3">Video Block</a></li>
-								<li><a href="#" data-scroll-nav="4">Free Trials</a></li>
-								<li><a href="#" data-scroll-nav="4">Trials</a></li>
+								<li><a href="insaat.html">Faaliyetlerimiz</a></li>
+								<li><a href="insaat.html">İlanlarımız</a></li>
+								<li><a href="insaat.html">Talibailiklerimiz</a></li>
+								<li><a href="insaat.html">Referanslarımız</a></li>
+								<li><a href="video.html">Video</a></li>
 							</ul>
 						</div>
 					</nav>
@@ -77,7 +77,8 @@
 			<section class="hero-area text-center overlay ssio" style="background-image: url(images/slide-1.jpg);" data-scroll-index="0">
 				<div id="particles-js"></div>
 					<div class="row">
-						<img src="images/LOGO.png" class="img-responsive">
+						<img src="images/LOGO.png" id='img' class="img-responsive">
+						<img src="images/LOGO-TEXT.png" class="img-responsive-text">
 					</div>
 			</section>
 			<section data-scroll-index="1" class='hakkinda-section'>
@@ -98,12 +99,12 @@
 				<div class="col-footer" id="bs-example-navbar-collapse-1">
 					<p>Hizli Linkler</p>
 					<ul class="nav-footer">
-						<li><a href="#" data-scroll-nav="0">Ana Sayfa</a></li>
-						<li><a href="#" data-scroll-nav="1">asdwqer</a></li>
-						<li><a href="#" data-scroll-nav="2">about</a></li>
-						<li><a href="#" data-scroll-nav="3">Video Block</a></li>
-						<li><a href="#" data-scroll-nav="4">Free Trials</a></li>
-						<li><a href="#" data-scroll-nav="5">Trials</a></li>
+						<li><a href="index.html" >Ana Sayfa</a></li>
+						<li><a href="insaat.html" >Faaliyetlerimiz</a></li>
+						<li><a href="insaat.html" >İlanlarımız</a></li>
+						<li><a href="insaat.html" >Talibailiklerimiz</a></li>
+						<li><a href="insaat.html" >Referanslarımız</a></li>
+						<li><a href="video.html" >Video</a></li>		
 					</ul>
 				</div>
 				<div class='col-footer'>
@@ -150,6 +151,20 @@
 	<script src="https://kit.fontawesome.com/862e8ed3d3.js" crossorigin="anonymous"></script>
 	<script>
 		AOS.init();
+		let image = document.getElementById('img');
+		let images = ['images/01.png','images/03.png','images/02.png', 'images/04.png',
+]
+		let x = 0
+		window.onload = function (){
+			setInterval(function(){
+				image.src = images[x];
+				x ++
+				if (x >= images.length){
+					image.src = 'images/LOGO.png'
+					return clearInterval(this);
+				};
+			}, 500);
+		}
 	</script>
 </body>
 </html>
