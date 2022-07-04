@@ -2136,6 +2136,7 @@ a:hover, a:focus, a.active {
 body{
 	background-color: rgba(0,0,0);
 }
+
 .ssio{
 	height: 100vh;
 	display: flex;
@@ -2195,10 +2196,12 @@ body{
 	margin: 0;
 }
 footer{
+	position: relative;
 	display: flex;
 	justify-content: space-around;
 	align-items: flex-start;
 	padding: 30px;
+	border-top: solid 3px  #ffe047;
 	background-color: rgb(20, 15, 7);
 }
 .col-footer p{
@@ -2289,6 +2292,21 @@ footer{
 	border: solid 5px #ffe047;
 	width: 750px;
 	object-fit: cover;
+}
+.button-up{
+	position: absolute;
+	left: 50%;
+	top: 0;
+	background-color: rgb(0,0,0);
+	border:  solid 2px #ffe047;
+	font-size: 24px;
+	font-weight: 700;
+	width: 50px;
+	height: 50px;
+	transform: translate(-50%, -50%)
+}
+.button-up i{
+	color: rgb(255,255,255);
 }
 @media (max-width: 768px){
 	.row{
