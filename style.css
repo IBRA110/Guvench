@@ -2174,7 +2174,7 @@ body{
 	width: 50%;
 }
 .hakkinda-section h2{
-	color:#ffe047;
+	color:#e6ac12;
 	text-align: left;
 	font-size: 48px;
 }
@@ -2184,7 +2184,7 @@ body{
 	font-size: 16px;
 }
 .hakkinda-info div{
-	border: 3px solid #ffe047;
+	border: 3px solid #e6ac12;
 	overflow: hidden;
 }	
 .hakkinda-info img{
@@ -2201,11 +2201,11 @@ footer{
 	justify-content: space-around;
 	align-items: flex-start;
 	padding: 30px;
-	border-top: solid 3px  #ffe047;
+	border-top: solid 3px  #e6ac12;
 	background-color: rgb(20, 15, 7);
 }
 .col-footer p{
-	color: #ffe047;
+	color: #e6ac12;
 	font-size: 24px;
 }
 .nav-footer{
@@ -2221,14 +2221,14 @@ footer{
 	font-size: 16px;
 }
 .nav-footer i{
-	color: #ffe047;
+	color: #e6ac12;
 	font-size: 18px;
 }
 .nav-footer li{
 	list-style-type: none;
 }
 .nav-footer li a{
-	color: #ffe047;
+	color: #e6ac12;
 }
 .my-footer{
 	display: flex;
@@ -2239,19 +2239,19 @@ footer{
 	margin: 0;
 }
 .my-footer a{
-	color: #ffe047;
+	color: #e6ac12;
 }
 .popup-image-containter{
 	display: flex;
 	flex-wrap: wrap;
 	gap: 15px;
 	justify-content: center;
-	padding: 10px;
+	align-items: center;
 }
 .popup-image{
 	height: 250px;
 	width: 350px;
-	border: 5px solid #ffe047;
+	border: 5px solid #e6ac12;
 	box-shadow: 0 5px 15px  rgba(0, 0, 0, 0.1);
 	overflow: hidden;
 	cursor: pointer;
@@ -2281,7 +2281,7 @@ footer{
 	right: 10px;
 	font-size: 60px;
 	font-weight: border;
-	color: #ffe047;
+	color: #e6ac12;
 	cursor: pointer;
 }
 .popup-img img{
@@ -2289,7 +2289,7 @@ footer{
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	border: solid 5px #ffe047;
+	border: solid 5px #e6ac12;
 	width: 750px;
 	object-fit: cover;
 }
@@ -2298,7 +2298,7 @@ footer{
 	left: 50%;
 	top: 0;
 	background-color: rgb(0,0,0);
-	border:  solid 2px #ffe047;
+	border:  solid 2px #e6ac12;
 	font-size: 24px;
 	font-weight: 700;
 	width: 50px;
@@ -2319,9 +2319,16 @@ footer{
 	color: rgb(255,255,255);
 	font-size: 24px;
 }
+.video{
+	padding: 30px;
+}
+iframe{
+	border: 5px solid #e6ac12;
+}
 @media (max-width: 768px){
 	.contact-section{
 		flex-direction: column;
+		align-items: center;
 		padding: 5px;
 	}
 	.row{
