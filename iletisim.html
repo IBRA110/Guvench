@@ -58,7 +58,7 @@
 						</div>
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav navbar-right">
-								<li><a href="#" data-scroll-nav="0">Ana Sayfa</a></li>
+								<li><a href="index.html">Ana Sayfa</a></li>
 								<li><a href="insaat.html">Faaliyetlerimiz</a></li>
 								<li><a href="insaat.html">İlanlarımız</a></li>
 								<li><a href="insaat.html">Talibailiklerimiz</a></li>
@@ -76,29 +76,38 @@
 		<!-- Main of the page -->
 		<main id="main">
 			<!-- Hero area of the page -->
-			<section class="hero-area text-center overlay ssio" style="background-image: url(images/slide-1.jpg);" data-scroll-index="0">
-				<div id="particles-js"></div>
-					<div class="row">
-						<img data-aos="fade-in"
-     data-aos-duration="3000"src="images/LOGO.png" id='img' class="img-responsive">
-						<img data-aos="fade-up"
-     data-aos-duration="3000"src="images/LOGO-TEXT.png" class="img-responsive-text">
-					</div>
+			<section class="hero-area text-center overlay ssio" style=" height: 45px;background-image: url(images/slide-1.jpg);" data-scroll-index="0">
+				<div style='height: 45px' id="particles-js"></div>
 			</section>
-			<section data-scroll-index="1" class='hakkinda-section'>
-				<div class='hakkinda'>
-					<div data-aos="zoom-out-up" class='hakkinda-info'>
-						<h2>HAKKINDA</h2>
-						<p>Yinelenen bir sayfa içeriğinin okuyucunun dikkatini dağıttığı bilinen bir gerçektir. Lorem Ipsum kullanmanın amacı, sürekli 'buraya metin gelecek, buraya metin gelecek' yazmaya kıyasla daha dengeli bir harf dağılımı sağlayarak okunurluğu artırmasıdır. Şu anda birçok masaüstü yayıncılık paketi ve web sayfa düzenleyicisi, varsayılan mıgır metinler olarak Lorem Ipsum kullanmaktadır. Ayrıca arama motorlarında 'lorem ipsum' anahtar sözcükleri ile arama yapıldığında henüz tasarım aşamasında olan çok sayıda site listelenir. Yıllar içinde, bazen kazara, bazen bilinçli olarak (örneğin mizah katılarak), çeşitli sürümleri geliştirilmiştir.
-						</p>
-					</div>
-					<div data-aos="zoom-out-up" class='hakkinda-info'>
-						<div>
-							<img src="images/house2.jpg" class="image-hak-1">
-						</div>
-					</div>
+			<div data-scroll-index="1" class='contact-section'>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3192.799776333347!2d30.59834199228338!3d36.84727102983607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x768d6ade048dcf53!2zMzbCsDUwJzQ5LjMiTiAzMMKwMzYnMDIuNyJF!5e0!3m2!1sde!2str!4v1657190038432!5m2!1sde!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+				</iframe>	
+				<div>
+					<p>Adres Bilgileri</p>
+					<ul class="nav-footer f-a">
+						<li>
+							<p><i class="fa-solid fa-house"></i>
+								Sapanbağları Mh.Gülşehir Sk. No:7 Antalya
+							</p>
+						</li>
+						<li>
+							<p><i class="fa-solid fa-phone"></i>
+								+90 537 261 41 07
+							</p>
+						</li>
+						<li>
+							<p><i class="fa-solid fa-phone"></i>
+								+90 537 261 41 07
+							</p>
+						</li>
+						<li>
+							<p><i class="fa-solid fa-square-envelope"></i></i>
+								mamedovarbeiter@gmail.com
+							</p>
+						</li>
+					</ul>
 				</div>
-			</section>
+			</div>
 			<footer>
 				<button class='button-up' data-scroll-nav="0" >
 					<i class="fa-solid fa-angle-up"></i></button>
@@ -110,7 +119,7 @@
 						<li><a href="insaat.html" >İlanlarımız</a></li>
 						<li><a href="insaat.html" >Talibailiklerimiz</a></li>
 						<li><a href="insaat.html" >Referanslarımız</a></li>
-						<li><a href="video.html" >Video</a></li>		
+						<li><a href="video.html">Video</a></li>
 					</ul>
 				</div>
 				<div class='col-footer'>
@@ -157,6 +166,15 @@
 	<script src="https://kit.fontawesome.com/862e8ed3d3.js" crossorigin="anonymous"></script>
 	<script>
 		AOS.init();
+		document.querySelectorAll('.popup-image-containter img').forEach(image =>{
+			image.onclick = () =>{
+				document.querySelector('.popup-img').style.display = 'block';
+				document.querySelector('.popup-img img').src = image.getAttribute('src');
+			}
+		});
+		document.querySelector('.popup-img span').onclick = () => {
+			document.querySelector('.popup-img').style.display = 'none';
+		}
 	</script>
 </body>
 </html>
